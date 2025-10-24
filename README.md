@@ -106,6 +106,7 @@ pip install -r requirements.txt
    ```env
    FACTORIAL_EMAIL="your_email@company.com"
    FACTORIAL_PASSWORD="your_password"
+   SHOW_BROWSER=false
    ```
 
 ## Usage
