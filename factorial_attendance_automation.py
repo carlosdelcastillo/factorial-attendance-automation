@@ -1,9 +1,3 @@
-# --- .env File Setup ---
-# Create a file named '.env' in the same directory as this script.
-# Add your Factorial HR credentials to it like this:
-# FACTORIAL_EMAIL="your_email@example.com"
-# FACTORIAL_PASSWORD="your_password"
-
 import os
 import time
 import sys
@@ -42,7 +36,7 @@ LOGIN_URL = "https://api.factorialhr.com/en/users/sign_in?&return_to=https%3A%2F
 EMAIL_INPUT = (By.XPATH, '//*[@id="user_email"]')
 PASSWORD_INPUT = (By.XPATH, '//*[@id="user_password"]')
 LOGIN_SUBMIT_BUTTON = (By.XPATH, '//*[@id="new_user"]/input[4]')
-TIMESHEET_BUTTON = (By.LINK_TEXT, "Fichaje")
+TIMESHEET_BUTTON = (By.LINK_TEXT, "Mi control horario")
 FILL_HOURS_BUTTON = (
     By.XPATH,
     "//button[.//text()[contains(., 'Rellenar automáticamente las hojas de fichajes')]]",
