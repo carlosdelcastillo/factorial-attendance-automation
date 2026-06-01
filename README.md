@@ -1,5 +1,17 @@
 # 🕒 Factorial Attendance Automation
 
+> [!CAUTION]
+> **This project is broken and no longer maintained.**
+>
+> Factorial HR deployed [Cloudflare Turnstile](https://developers.cloudflare.com/turnstile/) bot
+> protection on their login page. Headless browser automation is reliably blocked by this challenge
+> — no fix is planned.
+>
+> Additionally, this tool only ever supported native email/password login. SSO via Google,
+> Microsoft, or SAML was never implemented.
+>
+> **Do not expect this to work. The repository is archived for reference only.**
+
 <div align="center">
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg?style=for-the-badge&logo=python)
@@ -7,17 +19,16 @@
 ![Chrome](https://img.shields.io/badge/chrome-driver-4285F4?style=for-the-badge&logo=googlechrome)
 ![License](https://img.shields.io/badge/license-Unlicense-blue?style=for-the-badge)
 
-![Open Use](https://img.shields.io/badge/OPEN-USE%20NO%20WARRANTY-lightgrey?style=flat-square)
-![PoC](https://img.shields.io/badge/status-PoC-lightgrey?style=flat-square)
+![Archived](https://img.shields.io/badge/status-ARCHIVED%2FBROKEN-critical?style=flat-square)
 ![No Support](https://img.shields.io/badge/support-none-critical?style=flat-square)
+![Blocked](https://img.shields.io/badge/cloudflare-TURNSTILE%20BLOCKED-F38020?style=flat-square&logo=cloudflare)
 ![AI Powered](https://img.shields.io/badge/AI-Powered-00D4AA?style=flat-square&logo=openai)
-![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red?style=flat-square)
 
 </div>
 
 <div align="center">
-  <h3>✨ Automate your timesheet like a boss ✨</h3>
-  <p><em>"Why do manually what you can automate intelligently?"</em></p>
+  <h3>⚠️ Archived — Cloudflare Turnstile blocks headless automation ⚠️</h3>
+  <p><em>"Sometimes the website wins."</em></p>
 </div>
 
 
@@ -53,11 +64,12 @@
 <div align="center">
 
 | Feature | Description | Status |
-|---------|-------------|--------|
-| 🚀 **Automated Timesheet** | Fills your Factorial HR timesheet automatically | ✅ Ready |
-| 🔒 **Secure Credentials** | Environment variables for secure credential management | ✅ Ready |
-| 🖥️ **Cross-Platform** | Works on Windows, Linux, and macOS | ✅ Ready |
-| ⚡ **Lightning Fast** | Completes in seconds what takes minutes manually | ✅ Ready |
+| --- | --- | --- |
+| 🚫 **Automated Timesheet** | Blocked by Cloudflare Turnstile on the login page | ❌ Broken |
+| 🔒 **Secure Credentials** | Environment variables for credential management | ✅ Works |
+| 🔑 **Auth: email/password** | Native Factorial login only | ✅ Implemented |
+| 🔑 **Auth: SSO (Google/Microsoft/SAML)** | Was never implemented | ❌ Not implemented |
+| 🖥️ **Cross-Platform** | Builds and runs on Windows, Linux, macOS | ✅ Works |
 
 </div>
 

@@ -297,8 +297,27 @@ class FactorialAutomationBot:
                 logger.warning("⚠️  Error closing browser: %s", e)
 
 
+_CLOUDFLARE_BLOCK_MESSAGE = """
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                        THIS TOOL IS BROKEN                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Factorial HR has deployed Cloudflare Turnstile bot protection on their     ║
+║  login page. Headless browser automation is blocked at the login step and   ║
+║  there is no technical workaround available.                                 ║
+║                                                                              ║
+║  This project is archived. No fix is planned.                                ║
+║                                                                              ║
+║  Note: only native email/password login was ever supported.                  ║
+║  SSO (Google, Microsoft, SAML) was never implemented.                        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+"""
+
+
 def main() -> None:
     """Main entry point for the Factorial automation script."""
+    logger.error(_CLOUDFLARE_BLOCK_MESSAGE)
+    sys.exit(1)
+
     try:
         config = Config.from_env()
         bot = FactorialAutomationBot(config)
